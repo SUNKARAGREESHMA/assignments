@@ -1,0 +1,126 @@
+
+
+html
+  head
+    title Product Management System
+    style.
+      /* General Body Styling */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+        color: #333;
+      }
+
+      /* Header Styling */
+      h1 {
+        text-align: center;
+        color: #333;
+        margin-top: 50px;
+      }
+
+      h4 {
+        text-align: center;
+        color: #666;
+        margin-bottom: 20px;
+      }
+
+      /* Form Styling */
+      form {
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      button[type="submit"] {
+        padding: 15px 30px;
+        font-size: 16px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        width: 250px;
+      }
+
+      button[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+      /* Spacing Between Sections */
+      .login-option {
+        margin-top: 40px;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 600px) {
+        button[type="submit"] {
+          width: 80%;
+          font-size: 14px;
+        }
+
+        h1 {
+          font-size: 24px;
+        }
+
+        h4 {
+          font-size: 16px;
+        }
+      }
+  body
+    h1 Welcome to the product management system
+    h4 Please choose a login option
+
+    .login-option
+      // Button for admin Login
+      form(action="/admin-login" method="get")
+        button(type="submit") Admin login
+      h4 Login as an admin to register and manage products
+
+    .login-option
+      // Button for User Login
+      form(action="/user-login" method="get")
+        button(type="submit") User login
+      h4 Login as a user to search products by name or category
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//- html
+//-   head
+//-     title Document
+//-   body
+//-     h1 Welcome to the product management system
+//-     h4 Please choose a login option
+
+//-     // Button for admin Login
+//-     form(action="/admin-login" method="get")
+//-       button(type="submit") Admin login
+//-     h4 Login as an admin to register and manage products
+
+//-     // Button for User Login
+//-     form(action="/user-login" method="get")
+//-       button(type="submit") User login
+//-     h4 Login as a user to search products by name or category
+
+
+
+
+
+
+
+

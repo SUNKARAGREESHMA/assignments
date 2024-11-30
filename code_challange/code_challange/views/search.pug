@@ -1,0 +1,17 @@
+html
+  head
+    title Search Products
+  body
+    h1 Search Products
+
+    form(action='/search products', method='POST')
+      div
+        label(for='search by name') search by name:
+        input(type='text', name='searchbyname', required=true)
+      div
+        label(for='search by category') saarch by category:
+        input(type='password', name='searchbycategory', required=true)
+      div
+        button(type='submit') search
+
+  

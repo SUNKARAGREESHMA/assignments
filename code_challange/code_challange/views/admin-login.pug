@@ -1,0 +1,41 @@
+
+html
+  head
+    title Admin Board
+  body
+    h1 Admin page
+    h3 Register Product
+
+    form(action='/admin-login', method='POST')
+      div
+        label(for='productname') Product Name:
+        input(type='text', name='productname',placeholder='Product Name', required=true)
+      div
+        label(for='productid') Product ID:
+        input(type='text', name='productid',placeholder='Product Id', required=true)
+      div
+        label(for='price') Price:
+        input(type='text', name='price',placeholder='Price',required=true)
+      div
+        label(for='category') Category:
+        input(type='text', name='category',placeholder='category' ,required=true)
+      div
+        label(for='mfgdate') Manufacture Date:
+        input(type='date', name='mfgdate',placeholder='mfgdate', required=true)
+      div
+        label(for='expdate') Expiry Date:
+        input(type='date', name='expdate',placeholder='expdate', required=true)
+      div
+        button(type='submit') Register Product
+
+    h2 Product List
+    ul
+    
+      each product in products
+        li
+          bold  #{product.name}
+          | - #{product.category} - ₹#{product.price} -  #{product.mfgdate} -  #{product.expdate}
+
+
+
+
